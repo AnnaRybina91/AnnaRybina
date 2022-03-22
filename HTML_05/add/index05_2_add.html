@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<HTML> 
+        <HEAD> 
+            <META charset="utf-8"> 
+            <TITLE>HTML_05 Форма регистрации</TITLE> 
+        </HEAD> 
+        <BODY> 
+        <h1><center>Заполните анкету</center></h1>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Личные данные</legend>
+                <input type="text" name="surname" pattern="[А-Яа-яЁё]+" placeholder="Фамилия" maxlength="25" required autofocus><br>
+                <input type="text" name="name" pattern="[А-Яа-яЁё]+" placeholder="Имя" maxlength="20" required><br>
+                <input type="text" name="patronymic" pattern="[А-Яа-яЁё]+" placeholder="Отчество" maxlength="24" required>
+                <fieldset>
+                    <legend>Паспортные данные</legend>
+                    <input type="text" name="serie" pattern="[A-Z]{2}" size="2" placeholder="AA" required>
+                    <input type="text" name="number" pattern="[0-9]{7}" size="7" placeholder="1234567" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Дата рождения</legend>
+                    <input type="text" name="year" pattern="[0-9]{4}" size="4" placeholder="2000"><br>
+                    <select name="month">
+                        <option value="jan">Январь</option>
+                        <option value="feb">Февраль</option>
+                        <option value="mar">Март</option>
+                        <option value="apr">Апрель</option>
+                        <option value="may">Май</option>
+                        <option value="jun">Июнь</option>
+                        <option value="jul">Июль</option>
+                        <option value="aug">Август</option>
+                        <option value="sep">Сентябрь</option>
+                        <option value="oct">Октябрь</option>
+                        <option value="nov">Ноябрь</option>
+                        <option value="dec">Декабрь</option>
+                    </select><br>
+                    <input type="number" name="date" min="1" max="31" step="1">
+                </fieldset>
+                <select name="nationality" required>
+                    <option value="Bel">РБ</option>
+                    <option value="rus">PФ</option>
+                </select><br>
+                <label for="adr">Адрес:</label><br>
+                <textarea name="adress" id="adr" cols="15" rows="2"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Интересы</legend>
+                
+            </fieldset>
+        </form>
+       
+        </BODY> 
+</HTML> 
