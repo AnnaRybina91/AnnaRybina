@@ -1,0 +1,18 @@
+body{
+    margin-top: 5%;
+}
+header{
+    text-align: right;
+}
+h1{
+    font-size: 16px;
+}
+h3{
+    font-family: 'Bad Script', cursive; text-decoration: underline; text-indent: 5mm;
+}
+.main{
+    font-family: 'Bad Script', cursive; font-size: 15px; text-indent: 5mm;
+}
+p{
+    font-size: 15px;
+}
