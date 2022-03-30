@@ -3,9 +3,62 @@
 <head>
 	<meta charset="utf-8">
 	<title>CSS_02. Задание базовое №1</title>
-
+	<style>
+		.card{
+		background-image: url(../img/cards.png);
+		background-repeat: no-repeat;
+		width: 146px;
+		height: 195px;
+		float: left;
+		margin: 5px;
+		}
+		.first{
+		background-position: -141px -1197px;
+		}
+		.second{
+		background-position: 5px -1792px;
+		}
+		.third{
+		background-position: -287px -1394px;
+		}
+		.forth{
+		background-position: -143px -2189px;
+		}
+		.fifth{
+		background-position: -288px -2389px;
+		}
+		.offset1{
+			clear: left;
+			margin-top: 50px;
+		}
+		.offset2{
+			margin-top: 100px;
+			margin-left: -90px;
+		}
+		.offset3{
+			margin-top: 150px;
+			margin-left: -90px;
+		}
+		.offset4{
+			margin-top: 200px;
+			margin-left: -90px;
+		}
+		.offset5{
+			margin-top: 250px;
+			margin-left: -90px;
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="card first"></div>
+	<div class="card second"></div>
+	<div class="card third"></div>
+	<div class="card forth"></div>
+	<div class="card fifth"></div>
+	<div class="card first offset1"></div>
+	<div class="card second offset2"></div>
+	<div class="card third offset3"></div>
+	<div class="card forth offset4"></div>
+	<div class="card fifth offset5"></div>
 </body>
 </html>
