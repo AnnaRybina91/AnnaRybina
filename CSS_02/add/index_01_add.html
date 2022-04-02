@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS_02. Задание дополнительное №1</title>
+	<style>
+        .var1{
+            background: url('../img/t-l.gif') no-repeat top left,
+            url('../img/t-r.gif') no-repeat top right,
+            url('../img/b-l.gif') no-repeat bottom left,
+            url('../img/b-r.gif') no-repeat bottom right,
+            url('../img/l.gif') repeat-y left,  
+            url('../img/t.gif') repeat-x top, 
+            url('../img/r.gif') repeat-y right, 
+            url('../img/b.gif') repeat-x bottom, rgb(233, 229, 229);
+           padding:2em; width:80%;
+        }
+        .var2{
+            background-color: rgb(233, 229, 229);
+            background-image: url('../img/t-l.gif'), url('../img/t-r.gif'), url('../img/b-l.gif'), url('../img/b-r.gif'), url('../img/l.gif'),  url('../img/t.gif'),  url('../img/r.gif'),  url('../img/b.gif') ;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-x, repeat-y, repeat-x;
+            background-position: top left, top right, bottom left, bottom right, left, top, right, bottom;
+            padding:2em; width:80%;
+        }
+        .var4{
+            border-style:solid; border-width: 2.5em;  width:80%;
+    		border-image-source: url('../img/ramka.png') ;
+    		border-image-slice: 100;
+    		border-image-repeat: stretch; 
+    		border-image-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <h3>Вариант1</h3>
+    <div class="var1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga tenetur iste voluptates cupiditate eum repellendus temporibus praesentium rerum laborum soluta, laboriosam repudiandae dicta accusamus provident molestias ab consectetur enim.</p></div>
+    <h3>Вариант2</h3>
+    <div class="var2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis laborum suscipit provident dignissimos voluptatem eos sequi vitae, vel ipsam ut consequatur aut blanditiis. Similique eius ratione earum quibusdam vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vero assumenda odit culpa pariatur commodi hic molestias omnis natus non doloremque nulla quo voluptatem aperiam nobis beatae, repudiandae corporis. Maiores.</p></div>
+    <h3>Вариант3</h3>
+    <div style="background: url('../img/l.gif') repeat-y left rgb(233, 229, 229); width: 80%">
+        <div style="background: url('../img/t.gif') repeat-x top;">
+            <div style="background: url('../img/r.gif') repeat-y right;">
+                <div style="background: url('../img/b.gif') repeat-x bottom;">
+                    <div style="background: url('../img/t-l.gif') no-repeat top left;">
+                        <div style="background: url('../img/t-r.gif') no-repeat top right;">
+                            <div style="background: url('../img/b-l.gif') no-repeat bottom left;">
+                                <div style="padding: 2em; background: url('../img/b-r.gif') no-repeat bottom right;">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos corrupti perspiciatis corporis nisi natus quae provident! Voluptas, aperiam ipsum? Laudantium aperiam esse earum at doloribus neque nihil soluta quae atque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Вариант4</h3>
+    <div class="var4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam perferendis quaerat harum autem! Tenetur odio nam illum amet velit corporis suscipit, nobis perferendis sapiente id alias rerum. Ex, soluta iusto!</p>
+    </div>
+</body>
+</html>
